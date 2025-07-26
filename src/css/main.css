@@ -1,6 +1,6 @@
 .box {
     display: none;
-    
+
 }
 
 .box.ativo {
@@ -21,19 +21,37 @@
     color: white;
     z-index: 3;
 
+
     h2 {
         font-size: 10rem;
         width: 20px;
         line-height: 140px;
+        animation: animacao 0.7s ease;
+        position: relative;
+        left: 0;
     }
 
     p {
         font-size: 1.625rem;
         width: 900px;
         margin-top: 40px;
+        animation: animacao1 0.7s ease;
+        position: relative;
+        left: 10px;
     }
 
 }
 
+@keyframes animacao {
+    from {
+        left: -100px;
+        
+    }
+}
 
-
+@keyframes animacao1 {
+    from {
+        left: -200px;
+        
+    }
+}
