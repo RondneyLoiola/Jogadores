@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    .player {
+        img {
+            width: 200px;
+            height: 900px;
+            object-fit: cover;
+            transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
+            filter: grayscale(100%)
+        }
+
+        
+    }
+}
+
+.player:hover {
+
+    img {
+        width: 800px;
+        transition: width 2s cubic-bezier(0.19, 1, 0.22, 1), filter 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        filter: none;
+    }
+
+}
+
