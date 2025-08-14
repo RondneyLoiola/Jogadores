@@ -1,6 +1,6 @@
 .box {
     display: none;
-
+    position: relative;
 }
 
 .box.ativo {

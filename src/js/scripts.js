@@ -22,7 +22,27 @@ document.addEventListener('DOMContentLoaded', function () {
             // Adiciona a classe 'ativo' ao 'targetBox', que é o elemento que queremos mostrar
             targetBox.classList.add('ativo');
 
+
         });
+
     });
+
+
 });
+
+const back = document.querySelectorAll('.back')
+
+back.forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelectorAll('.box').forEach(box => {
+            // Remove a classe 'ativo' de todos os elementos 'box'
+            box.classList.remove('ativo');
+        });
+
+    })
+})
+
+
+
+
 
