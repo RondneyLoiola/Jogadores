@@ -63,8 +63,10 @@ body {
     text-decoration: none;
     margin: 0;
     animation: animacao 0.7s ease;
+    transition: border-radius .8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .back:hover {
     opacity: 1;
+    border-radius: 0px;
 }
